@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: black;
+  color: white;
+}
+
+header {
+  background: #4f46e5;
+  padding: 10px 20px;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+}
+
+header .logo {
+  font-weight: bolder;
+  text-align: center;
+  font-size: 20px;
+  color: black; 
+  margin-right: 40px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  margin-right: 15px;
+}
+
+nav a:hover {
+  font-weight: bolder;
+  background-color: black;
+  color: #4f46e5;
+  transition: 0.2s;
+}
+
+main {
+  padding: 20px;
+}
+
+/* ---- Tableau ---- */
+table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 8px;
+  margin-top: 20px;
+  background: black; 
+  overflow: hidden;
+}
+
+table th:first-child {
+  border-top-left-radius: 8px;
+}
+table th:last-child {
+  border-top-right-radius: 8px;
+}
+
+table tr:last-child td:first-child {
+  border-bottom-left-radius: 8px;
+}
+table tr:last-child td:last-child {
+  border-bottom-right-radius: 8px;
+}
+
+th, td {
+  padding: 12px 15px;
+  border: 3px solid #4f46e5;
+}
+
+th {
+  text-align: center;
+  background: #4f46e5;
+  font-weight: 600;
+  color: black;
+}
+
+td {
+  color: #4f46e5;
+  font-weight: 600;
+}
+
+tr:hover td {
+  background: #4f46e5;
+  color: black;
+  border: 3px solid black;
+  transition: 0.2s;
+}
+
+td.right {
+  text-align: right;
+}
+
+/* ---- Formulaire ---- */
+form {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(2);
+  gap: 15px;
+  background: black;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+input {
+  background: black;
+  border: 3px solid white;
+  border-radius: 8px;
+  padding: 10px;
+  border-color: white;
+  color: white;
+  font-size: 600;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4f46e5;
+  color: #4f46e5;
+}
+
+button {
+  background: #4f46e5;
+  border: none;
+  color: black;
+  font-size: 600;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: crosshair;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: black;
+  color: #4f46e5;
+  border: 3px solid #4f46e5;
+}
+
+/* ---- Carte section ---- */
+section {
+  background: black;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* ---- Flèches Performance ---- */
+.up {
+  color: #13ffb0; /* vert */
+  font-weight: bold;
+}
+
+.down {
+  color: #f15454; /* rouge */
+  font-weight: bold;
+}
+
+tfoot {
+  background: black;           /* fond un peu différent */
+  font-weight: bold;
+}
+
+tfoot td, 
+tfoot th {
+  border-top: 3px solid #4f46e5; /* trait séparateur violet */
+  padding: 12px 15px;
+  color: black;
+  text-align: left;
+}
+
+/* couleur générale des placeholders */
+input::placeholder {
+  color: white;   
+  opacity: 1;       
+}
+
+input:focus::placeholder {
+  color: #4f46e5;   
+}
+
+
+footer {
+  text-align: center;
+  padding: 10px;
+  font-size: 12px;
+  color: #4f46e5;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}

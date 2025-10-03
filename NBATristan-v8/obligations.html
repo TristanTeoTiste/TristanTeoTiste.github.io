@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <title>Mes Actions - NBATristan</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script defer src="assets/app.js"></script>
+</head>
+<body data-page="actions">
+
+<header>
+  <div class="logo">NBATristan</div>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="actions.html">Actions</a>
+    <a href="obligations.html">Obligations</a>
+    <a href="cryptos.html">Crypto</a>
+    <a href="livrets.html">Livrets</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Mes Obligations</h1>
+
+<section>
+ <table>
+  <thead>
+     <tr>
+      <th>Nom</th>
+      <th>Ticker</th>
+      <th>Quantité</th>
+      <th>Prix actuel</th>
+      <th>Valeur Totale</th>
+      <th>Variation</th>
+     </tr>
+  </thead>
+  <tbody id="actions-rows">
+    <tr><td colspan="6">Aucune ligne</td></tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <th colspan="5" class="right">Total</th>
+      <th id="actions-total">—</th>
+    </tr>
+  </tfoot>
+ </table>
+</section>
+
+  <section>
+  <h2>Composition</h2>
+  <canvas id="actions-pie" height="180"></canvas>
+</section>
+
+<section>
+  <h2>Performance</h2>
+  <canvas id="actions-line" height="180"></canvas>
+</section>
+
+  <section>
+    <h2>Ajouter une obligation</h2>
+    <form id="form-actions">
+      <input name="name" placeholder="Nom de l'obligation" required />
+      <input name="principal" type="number" step="any" placeholder="Montant investi (€)" required />
+      <input name="annualRate" type="number" step="any" placeholder="Taux (ex: 2.5)" required />
+      <input name="startDate" type="date" required />
+      <button type="submit">Ajouter</button>
+    </form>
+  </section>
+</main>
+
+<footer>
+  <p>NBATristan v8 © 2025</p>
+</footer>
+
+</body>
+</html>
